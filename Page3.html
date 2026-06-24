@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางกิจกรรมประจำสัปดาห์</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 20px;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .table-container {
+            overflow-x: auto; /* ช่วยให้เลื่อนซ้าย-ขวาได้บนมือถือ */
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            min-width: 600px; /* ป้องกันตารางบีบตัวจนเกินไป */
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #2c3e50;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        /* สีไฮไลต์สำหรับวันต่างๆ (ทางเลือกเพื่อให้ดูง่ายขึ้น) */
+        .day-sun { background-color: #ffebee; color: #c62828; font-weight: bold; }
+        .day-mon { background-color: #fffde7; color: #fbc02d; font-weight: bold; }
+        .day-tue { background-color: #fce4ec; color: #c2185b; font-weight: bold; }
+        .day-wed { background-color: #e8f5e9; color: #2e7d32; font-weight: bold; }
+        .day-thu { background-color: #fff3e0; color: #ef6c00; font-weight: bold; }
+        .day-fri { background-color: #e1f5fe; color: #0277bd; font-weight: bold; }
+        .day-sat { background-color: #f3e5f5; color: #6a1b9a; font-weight: bold; }
+        
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>📅 ตารางกิจกรรมประจำสัปดาห์</h2>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>วัน</th>
+                    <th>เวลา</th>
+                    <th>กิจกรรม</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day-sun" rowspan="2">อาทิตย์</td>
+                    <td>09:00 - 12:00</td>
+                    <td>พักผ่อน / อ่านหนังสือ</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 16:00</td>
+                    <td>ซื้อของเข้าบ้าน</td>
+                </tr>
+
+                <tr>
+                    <td class="day-mon" rowspan="2">จันทร์</td>
+                    <td>08:30 - 12:00</td>
+                    <td>เที่ยว</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 17:00</td>
+                    <td>เคลียร์งานเอกสาร</td>
+                </tr>
+
+                <tr>
+                    <td class="day-tue">อังคาร</td>
+                    <td>09:00 - 12:00</td>
+                    <td>เข้าเรียน / ทำโปรเจกต์</td>
+                </tr>
+
+                <tr>
+                    <td class="day-wed">พุธ</td>
+                    <td>14:00 - 16:00</td>
+                    <td>เล่นเกม</td>
+                </tr>
+
+                <tr>
+                    <td class="day-thu">พฤหัสบดี</td>
+                    <td>10:00 - 12:00</td>
+                    <td>กินของหวาน</td>
+                </tr>
+
+                <tr>
+                    <td class="day-fri">ศุกร์</td>
+                    <td>16:00 - 18:00</td>
+                    <td>ออกกำลังกายที่ฟิตเนส</td>
+                </tr>
+
+                <tr>
+                    <td class="day-sat">เสาร์</td>
+                    <td>18:00 - 21:00</td>
+                    <td>ทานข้าวกับครอบครัว / ดูหนัง</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<button onclick="document.location='Page2.html'">หน้าที่แล้ว</button>
+
+
+</body>
+</html>
